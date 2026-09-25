@@ -8,7 +8,7 @@ const Signin = () => {
   const handleSignin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:5001/api/email/signin", {
+    const res = await fetch("https://email-send-reply.onrender.com/api/email/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ Email, Password }),

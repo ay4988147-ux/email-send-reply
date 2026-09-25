@@ -10,7 +10,7 @@ const MailSend =()=> {
 
   const sendWithReply = async () => {
     try {
-      const res = await fetch("http://localhost:5001/api/email/send", {
+      const res = await fetch("https://email-send-reply.onrender.com/api/email/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -18,6 +18,10 @@ app.use(express.json());
 // Routes
 app.use("/api/email", EmailRoutes);
 
+app.get('/' , (req , res)=>{
+    res.send('API IS RUNNINIG')
+})
+
 // MongoDB Connection
 mongoose.connect(process.env.MongoDb_URL)
     .then(() => console.log("MongoDB Connected"))

@@ -38,7 +38,8 @@ const MailSend =()=> {
   const sendNoReply = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5001/api/email/sendnoreply",
+         "https://email-send-reply.onrender.com/api/email/sendnoreply"
+       ,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
